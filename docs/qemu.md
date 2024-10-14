@@ -13,4 +13,6 @@ Download the 64-bit version [here](https://qemu.weilnetz.de/w64/)
 
 After downloading, open and install QEMU in the default path (```C:\Program Files\qemu```). Also, leave all checkboxes checked when prompted in the additional package list while running the installer. 
 
+### Add environmental variable to Windows
 
+Add the path ```C:\Program Files\qemu``` to your system's path variable. I recommend adding it to your system variables instead of just user path variables. Tutorials on how you can do that are widely available in the internet. You can check if everything was successful to this point in time by opening a terminal and executing the command ```qemu-system-arm --version```. It should return something similar than of the time of writing, which is ```QEMU emulator version 9.1.0 (v9.1.0-12064-gc658eebf44)```
