@@ -1,7 +1,7 @@
 # Installation Guide
 
 > [!IMPORTANT]
-> This guide was written in Otcober 2024. While I try to keep the information as general as possible, as well as keeping the whole process up-to-date with the best of conscience. The installation method can differ depending on future changes and is subject to a general understanding of working with software and Windows. 
+> This guide was written in Otcober 2024. While I try to keep the information as general as possible, as well as keeping the whole process up-to-date with the best of conscience, I do not guarantee for completeness. The installation method can differ depending on future changes and is subject to a general understanding of working with software and Windows. 
 
 ### Download and install QEMU
 
