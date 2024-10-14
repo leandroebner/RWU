@@ -1,7 +1,7 @@
-# Installation Guide
+# Installation guide
 
 > [!IMPORTANT]
-> This guide was written in Otcober 2024. While I try to keep the information as general as possible, as well as keeping the whole process up-to-date with the best of conscience, I do not guarantee for completeness. The installation method can differ depending on future changes and is subject to a general understanding of working with software and Windows. 
+> This guide was written in Otcober 2024. While I try to keep the information as general as possible, as well as keeping the whole process up-to-date with the best of conscience, I do not guarantee for completeness. The installation method > can differ depending on future changes and is subject to a general understanding of working with software and Windows. 
 
 ### Download and install QEMU
 
@@ -16,3 +16,13 @@ After downloading, open and install QEMU in the default path (```C:\Program File
 ### Add environmental variable to Windows
 
 Add the path ```C:\Program Files\qemu``` to your system's path variable. I recommend adding it to your system variables instead of just user path variables. Tutorials on how you can do that are widely available in the internet. You can check if everything was successful to this point in time by opening a terminal and executing the command ```qemu-system-arm --version```. It should return something similar than of the time of writing, which is ```QEMU emulator version 9.1.0 (v9.1.0-12064-gc658eebf44)```
+
+### Download the RPi QEMU kernel
+
+Download the zip file of the main branch of the repository by following this link [here](https://github.com/dhruvvyas90/qemu-rpi-kernel/archive/refs/heads/master.zip). After finishing downloading, extract the contents of the archive. Rename the inner root directory of the archive from ```qemu-rpi-kernel-master``` to ```qemu-rpi-kernel```
+
+> [!NOTE]
+> The file structure of the downloaded zip looks like the following: ```.\qemu-rpi-kernel-master.zip\qemu-rpi-kernel-master\...\```.
+> Make sure to rename and only use the inner folder of archive: ```.\qemu-rpi-kernel-master\...\```.
+> Just renaming the unzipped folder will **NOT** work later on!
+
