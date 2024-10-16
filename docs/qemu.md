@@ -37,9 +37,20 @@ Create a new folder/directory on your drive and put the folder ```qemu-rpi-kerne
 
 After that, paste in the command down below. Your VM should start now!
 
-```shell
+Single line:
+```shell 
 qemu-system-arm -M versatilepb -cpu arm1176 -m 256 -drive "file=./2023-02-21-raspios-buster-armhf-lite.img,if=none,index=0,media=disk,format=raw,id=disk0" -device "virtio-blk-pci,drive=disk0,disable-modern=on,disable-legacy=off" -net "user,hostfwd=tcp::5022-:22" -dtb ./qemu-rpi-kernel/versatile-pb-buster-5.4.51.dtb -kernel ./qemu-rpi-kernel/kernel-qemu-5.4.51-buster -append "root=/dev/vda2 panic=1" -no-reboot -net nic
 ```
-
+Multi line:
+```shell
+qemu-system-arm -M versatilepb -cpu arm1176 -m 256 ^
+-drive "file=./2023-02-21-raspios-buster-armhf-lite.img,if=none,index=0,media=disk,format=raw,id=disk0" ^
+-device "virtio-blk-pci,drive=disk0,disable-modern=on,disable-legacy=off" ^
+-net "user,hostfwd=tcp::5022-:22" ^
+-dtb ./qemu-rpi-kernel/versatile-pb-buster-5.4.51.dtb ^
+-kernel ./qemu-rpi-kernel/kernel-qemu-5.4.51-buster ^
+-append "root=/dev/vda2 panic=1" ^
+-no-reboot -net nic
+```
 
 
